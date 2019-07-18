@@ -2,6 +2,8 @@ let posX =25;
 let posY =25;
 let enemyPosX, enemyPosY;
 let enemyWidth = 50, enemyHeight = 50
+let myWidth = 50
+let myHeight = 50
 let myLeft, MyRight, myTop,myBottom
 let enemyLeft, enemyRight, EnemyTop,EnemyBottom
 let points = 0
@@ -34,7 +36,7 @@ function draw() {
 
     background(0);
     image(togepi, enemyPosX,enemyPosY,enemyWidth,enemyHeight);
-    image(clefairy,posX,posY,myWidth,MyHeight)
+    image(clefairy,posX,posY,myWidth,myHeight)
     fill(0,0,255)
     rect(posX,posY,50,50);
     fill(255,0,0)
