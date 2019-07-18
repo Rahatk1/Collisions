@@ -10,6 +10,7 @@ let points = 0
 // declare variables for graphics
 let clefairy;
 let togepi;
+let backdrop;
 
 function setup() {
     createCanvas(500,500);
@@ -17,15 +18,16 @@ function setup() {
     textSize(15)
 
     //rect mode
-    rectMode(CENTER);
-    fill(0,0,255);
-    rect(25,25,50,50);
+    imagemode(CENTER);
+    // fill(0,0,255);
+    // rect(25,25,50,50);
 
     enemyPosX = random(25,475);
     enemyPosY = random(100,475);
 
     clefairy = loadImage("clefairy.png");
     togepi = loadImage("togepi.png");
+    backdrop = loadImage('Forest.png')
 }
 
 
@@ -33,14 +35,13 @@ function setup() {
 
 function draw() {
 
-
-    background(0);
+image(backdrop,width / 2, height / 2);
     image(togepi, enemyPosX,enemyPosY,enemyWidth,enemyHeight);
     image(clefairy,posX,posY,myWidth,myHeight)
-    fill(0,0,255)
-    rect(posX,posY,50,50);
-    fill(255,0,0)
-    rect(enemyPosX, enemyPosY, enemyWidth,enemyHeight);
+    // fill(0,0,255)
+    // rect(posX,posY,50,50);
+    // fill(255,0,0)
+    // rect(enemyPosX, enemyPosY, enemyWidth,enemyHeight);
     
     
     if (keyIsDown(LEFT_ARROW)){
