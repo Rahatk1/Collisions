@@ -34,8 +34,8 @@ function setup() {
 
 
 function draw() {
-
-image(backdrop,width / 2, height / 2);
+    background(0);
+    image(backdrop,width / 2, height / 2);
     image(togepi, enemyPosX,enemyPosY,enemyWidth,enemyHeight);
     image(clefairy,posX,posY,myWidth,myHeight)
     // fill(0,0,255)
