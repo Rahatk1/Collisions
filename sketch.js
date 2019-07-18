@@ -18,7 +18,7 @@ function setup() {
     textSize(15)
 
     //rect mode
-    imagemode(CENTER);
+    imageMode(CENTER);
     // fill(0,0,255);
     // rect(25,25,50,50);
 
